@@ -1,0 +1,13 @@
+
+[
+    {
+        "model": "seedapi.rating",
+        "pk": 1,
+        "fields": {
+           "customer": 2,
+           "product" : 1,
+           "score": 8,
+           "review": "I love this flower!"
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "model": "seedapi.paymenttype",
+        "pk": 1,
+        "fields": {
+           "merchant_name": "JP Morgan Chase",
+           "acct_number": 77777777,
+           "user": 2
+        }
+    }]

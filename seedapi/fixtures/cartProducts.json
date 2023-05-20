@@ -1,0 +1,19 @@
+
+[
+    {
+        "model": "seedapi.cartproduct",
+        "pk": 1,
+        "fields": {
+           "cart": 1,
+           "product" : 1
+        }
+    },
+    {
+        "model": "seedapi.cartproduct",
+        "pk": 2,
+        "fields": {
+           "cart": 1,
+           "product" : 2
+        }
+    }
+]

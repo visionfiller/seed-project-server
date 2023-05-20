@@ -1,0 +1,23 @@
+[
+    {
+        "model": "seedapi.category",
+        "pk": 1,
+        "fields": {
+           "name": "Wildflowers"
+        }
+    },
+    {
+        "model": "seedapi.category",
+        "pk": 2,
+        "fields": {
+           "name": "Perennials"
+        }
+    },
+    {
+        "model": "seedapi.category",
+        "pk": 3,
+        "fields": {
+           "name": "Herbs"
+        }
+    }
+]

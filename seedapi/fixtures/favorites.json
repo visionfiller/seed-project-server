@@ -1,0 +1,19 @@
+
+[
+    {
+        "model": "seedapi.favorite",
+        "pk": 1,
+        "fields": {
+           "customer": 2,
+           "product" : 1
+        }
+    },
+    {
+        "model": "seedapi.favorite",
+        "pk": 2,
+        "fields": {
+           "customer": 2,
+           "product" : 2
+        }
+    }
+]

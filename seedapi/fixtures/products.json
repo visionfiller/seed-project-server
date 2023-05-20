@@ -1,0 +1,42 @@
+[
+    {
+        "model": "seedapi.product",
+        "pk": 1,
+        "fields": {
+            "name": "Shirley Poppy",
+            "seller": 1,
+            "price": 3.50,
+            "description": "Beautiful cutting flower, bred from the wild European field poppy",
+            "quantity": 100,
+            "image_path": "https://www.petfinder.com/cat/baby-59623997/tn/nashville/nashville-cat-rescue-tn369/",
+            "category": 1
+            
+        }
+    },
+    {
+        "model": "seedapi.product",
+        "pk": 2,
+        "fields": {
+            "name": "Marigold",
+            "seller": 1,
+            "price": 2.50,
+            "description": "Great companion plant for tomatoes and other veggies to keep pests away.",
+            "quantity": 100,
+            "image_path": "https://www.petfinder.com/cat/baby-59623997/tn/nashville/nashville-cat-rescue-tn369/",
+            "category": 2
+        }
+    },
+    {
+        "model": "seedapi.product",
+        "pk": 3,
+        "fields": {
+            "name": "Thai Basil",
+            "seller": 1,
+            "price": 2.50,
+            "description": "Perfect for companion planting, and great for Asian cooking.",
+            "quantity": 100,
+            "image_path": "https://www.petfinder.com/cat/baby-59623997/tn/nashville/nashville-cat-rescue-tn369/",
+            "category": 3
+        }
+    }
+]

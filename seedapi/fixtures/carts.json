@@ -1,0 +1,13 @@
+
+[
+    {
+        "model": "seedapi.cart",
+        "pk": 1,
+        "fields": {
+           "payment_type": 1,
+           "customer" : 2,
+           "created_on": "2023-05-17"
+    
+        }
+    }
+]
