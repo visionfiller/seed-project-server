@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from seedapi.models import Cart
+from seedapi.models import Cart,Product
 from rest_framework.decorators import action
 
 
@@ -45,15 +45,22 @@ class CartView(ViewSet):
 
         
   
-
-
-class CartSerializer(serializers.ModelSerializer):
+class CartProductSerializer(serializers.ModelSerializer):
     """JSON serializer for Products
     """
    
     class Meta:
+        model = Product
+        fields = ('id', 'name', 'seller', 'description', 'quantity','image_path', 'category', 'favorited_by')
+
+class CartSerializer(serializers.ModelSerializer):
+    """JSON serializer for Products
+    """
+    products = CartProductSerializer(many=True)
+    class Meta:
         model = Cart
         fields = ('id', 'payment_type', 'created_on', 'completed_on', 'customer', 'products')
+        
        
         
         

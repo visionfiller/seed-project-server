@@ -20,7 +20,7 @@ def login_user(request):
     # Use the built-in authenticate method to verify
     # authenticate returns the user object or None if no user is found
     authenticated_user = authenticate(username=username, password=password)
-
+    print(authenticated_user)
     # If authentication was successful, respond with their token
     if authenticated_user is not None:
         token = Token.objects.get(user=authenticated_user)
@@ -57,7 +57,7 @@ def register_user(request):
    
 
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=new_user.user)
+    token = Token.objects.create(user=new_user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
