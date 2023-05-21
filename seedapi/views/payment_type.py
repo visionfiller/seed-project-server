@@ -19,8 +19,8 @@ class PaymentTypeView(ViewSet):
         try:
             payment_type = PaymentType.objects.create(
                 user=request.auth.user,
-                merchant_name=request.data['merchant'],
-                acct_number=request.data['acctNumber']
+                merchant_name=request.data['merchant_name'],
+                acct_number=request.data['acct_number']
             )
             serializer = PaymentTypeSerializer(payment_type)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
